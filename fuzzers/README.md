@@ -38,5 +38,6 @@ popd
 
 ./go-fuzz-build -tags preset_minimal -o SSZ.a -libfuzzer github.com/protolambda/zrnt/fuzzers/SSZ && clang++ -fsanitize=fuzzer SSZ.a
 ./go-fuzz-build -tags preset_minimal -o shuffling.a -libfuzzer github.com/protolambda/zrnt/fuzzers/shuffling && clang++ -fsanitize=fuzzer shuffling.a
+./go-fuzz-build -tags preset_minimal -o validatorset.a -libfuzzer github.com/protolambda/zrnt/fuzzers/validatorset && clang++ -fsanitize=fuzzer validatorset.a
 
 ```
